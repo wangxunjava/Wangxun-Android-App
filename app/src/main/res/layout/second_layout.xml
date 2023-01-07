@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.1" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
+              android:background="#F0EBC8"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
@@ -44,11 +45,6 @@
         android:layout_height="wrap_content"
         android:text="拨打电话"/>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <TextView
             android:id="@+id/text_view4"
             android:layout_width="match_parent"
@@ -76,6 +72,24 @@
             android:textColor="#41F050"
             android:text="颜色文本"/>
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/text_view7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:shadowColor="#FAE340"
+            android:shadowDx="10.0"
+            android:shadowDy="10.0"
+            android:shadowRadius="3.0"
+            android:text="这是阴影文本"/>
+
+    <ToggleButton
+        android:id="@+id/togglebutton_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="打开"
+        android:textOn="关闭"/>
 
 </LinearLayout>

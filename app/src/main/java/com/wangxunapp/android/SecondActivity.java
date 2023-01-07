@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -22,6 +20,7 @@ public class SecondActivity extends AppCompatActivity {
         Button button4 = (Button) findViewById(R.id.button_4);
         Button button5 = (Button) findViewById(R.id.button_5);
         editText = (EditText) findViewById(R.id.edit_text);
+        ToggleButton toggle = (ToggleButton) findViewById(R.id.togglebutton_1);
         Intent intent = getIntent();
         String data = intent.getStringExtra("extra_data");
         Log.d("SecondActivity", data);
@@ -55,6 +54,15 @@ public class SecondActivity extends AppCompatActivity {
                 intent.setData(Uri.parse("tel:10086"));
                 Toast.makeText(SecondActivity.this, "拨打电话：10086", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+            }
+        });
+        toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    Toast.makeText(SecondActivity.this, "按钮打开", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(SecondActivity.this, "按钮关闭", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
