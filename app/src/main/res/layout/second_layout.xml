@@ -85,11 +85,40 @@
             android:shadowRadius="3.0"
             android:text="这是阴影文本"/>
 
+    <EditText
+            android:id="@+id/edit_tex2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="数字类型键盘"
+            android:inputType="number" />
+
     <ToggleButton
         android:id="@+id/togglebutton_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textOff="打开"
         android:textOn="关闭"/>
+
+    <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioButton android:id="@+id/radio_1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="1"/>
+
+        <RadioButton android:id="@+id/radio_2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="2"/>
+
+    </RadioGroup>
+
+    <ImageButton
+            android:src="@drawable/android_icons_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 </LinearLayout>
