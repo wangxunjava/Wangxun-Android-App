@@ -85,8 +85,6 @@
             android:shadowRadius="3.0"
             android:text="这是阴影文本"/>
 
-<<<<<<< HEAD
-=======
     <EditText
             android:id="@+id/edit_tex2"
             android:layout_width="match_parent"
@@ -94,15 +92,13 @@
             android:hint="数字类型键盘"
             android:inputType="number" />
 
->>>>>>> dev
+
     <ToggleButton
         android:id="@+id/togglebutton_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textOff="打开"
         android:textOn="关闭"/>
-<<<<<<< HEAD
-=======
 
     <RadioGroup
             android:id="@+id/radioGroup"
