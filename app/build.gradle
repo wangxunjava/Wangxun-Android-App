@@ -2,14 +2,18 @@ plugins {
     id 'com.android.application'
 }
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.wangxunapp.android"
         minSdk 24
-        targetSdk 32
+        targetSdk 33
         versionCode 1
+<<<<<<< HEAD
         versionName "1.1"
+=======
+        versionName "1.1.2"
+>>>>>>> dev
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

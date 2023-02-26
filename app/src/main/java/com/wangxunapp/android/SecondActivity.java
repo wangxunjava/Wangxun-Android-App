@@ -1,12 +1,15 @@
 package com.wangxunapp.android;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.view.menu.BaseMenuPresenter;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -21,6 +24,19 @@ public class SecondActivity extends AppCompatActivity {
         Button button5 = (Button) findViewById(R.id.button_5);
         editText = (EditText) findViewById(R.id.edit_text);
         ToggleButton toggle = (ToggleButton) findViewById(R.id.togglebutton_1);
+<<<<<<< HEAD
+=======
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton radio1 = (RadioButton) findViewById(R.id.radio_1);
+                Toast.makeText(getApplicationContext(), "你选了:" + radio1.getText(), Toast.LENGTH_SHORT).show();
+                RadioButton radio2 = (RadioButton) findViewById(R.id.radio_2);
+                Toast.makeText(getApplicationContext(), "你选了:" + radio2.getText(), Toast.LENGTH_SHORT).show();
+            }
+        });
+>>>>>>> dev
         Intent intent = getIntent();
         String data = intent.getStringExtra("extra_data");
         Log.d("SecondActivity", data);
@@ -59,9 +75,15 @@ public class SecondActivity extends AppCompatActivity {
         toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
+<<<<<<< HEAD
                     Toast.makeText(SecondActivity.this, "按钮打开", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(SecondActivity.this, "按钮关闭", Toast.LENGTH_SHORT).show();
+=======
+                    Toast.makeText(SecondActivity.this, "按钮" + toggle.getTextOn(), Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(SecondActivity.this, "按钮" + toggle.getTextOff(), Toast.LENGTH_SHORT).show();
+>>>>>>> dev
                 }
             }
         });

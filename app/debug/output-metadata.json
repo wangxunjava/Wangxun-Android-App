@@ -12,7 +12,11 @@
       "filters": [],
       "attributes": [],
       "versionCode": 1,
+<<<<<<< HEAD
       "versionName": "1.1",
+=======
+      "versionName": "1.1.2",
+>>>>>>> dev
       "outputFile": "app-debug.apk"
     }
   ],
